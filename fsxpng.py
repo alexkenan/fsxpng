@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 from PIL import Image, ImageFilter
 import shutil
