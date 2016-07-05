@@ -10,6 +10,7 @@ Converts FSX BMP screenshots to PNG
 def pick_number():
     """
     Asks user for number to start with
+    :return: int to start naming the files
     """
     still_going = True
     while still_going:
@@ -29,6 +30,7 @@ def bmptopng(file_, number, newpath, basefile, filename_='Me'):
     @:param number : a number to append to the filename
     @:param newpath : folder path for the PNG image to go
     @:param basefile : the parent folder absolute path
+    :return: None
     """
     if 'DS_Store' not in file_ and '.' in file_:
         filename = '{}{}.PNG'.format(filename_, number)
@@ -45,6 +47,7 @@ def bmptopng(file_, number, newpath, basefile, filename_='Me'):
 def run_converter():
     """
     Runs the program
+    @return: None
     """
     numbers = pick_number()
     folderpaths = ''
